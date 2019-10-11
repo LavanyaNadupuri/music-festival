@@ -13,7 +13,7 @@ class App extends Component {
 
     componentDidMount() {
 
-        fetch('https://cors-anywhere.herokuapp.com/http://eacodingtest.digital.energyaustralia.com.au/api/v1/festivals')
+        fetch('http://eacodingtest.digital.energyaustralia.com.au/api/v1/festivals')
             .then(results => {
                 return results.json()
             })
