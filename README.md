@@ -1,4 +1,4 @@
-music-festival
+<h1>music-festival</h1><br/>
 This project is to listing out music festival data in a particular manner: at the top level, it shows the band record label, below that it lists out all bands under their management, and below that it displays which festivals they've attended, if any. All entries are sorted alphabetically.
 
 Steps to execute the project:
