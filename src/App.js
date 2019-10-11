@@ -13,7 +13,7 @@ class App extends Component {
 
     componentDidMount() {
 
-        fetch('http://eacodingtest.digital.energyaustralia.com.au/api/v1/festivals')
+        fetch('https://cors-anywhere.herokuapp.com/http://eacodingtest.digital.energyaustralia.com.au/api/v1/festivals')
             .then(results => {
                 return results.json()
             })
@@ -82,11 +82,12 @@ class App extends Component {
 
     render() {
         let {isLoaded, items} = this.state;
+        let ListOfLabels = this.arrangeItems(items);
         if (!isLoaded) {
             return <div>Loading.....</div>;
         } else
         {
-            let ListOfLabels = this.arrangeItems(items);
+
             return (
                 <ul>
                     {ListOfLabels.sort((a, b) => a.name.localeCompare(b.name)).map((item, index) => (
